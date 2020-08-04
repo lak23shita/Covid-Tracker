@@ -3,6 +3,8 @@ import logo from './components/logo.png';
 import styles from './App.module.css';
 import { Cards,Chart,CountryPicker } from "./components";
 import {fetchData} from './api';
+import Toggle from './components/Toggle';
+import DarkModeToggle from "react-dark-mode-toggle";
  class App extends React.Component {
   state={
     data:{ },
@@ -25,8 +27,11 @@ import {fetchData} from './api';
    render(){
      const {data, country} = this.state;
      return(
-        <div className={styles.container}>
+        <div className={styles.container } >
+        <div className={styles.navbar}>
           <img className={styles.logo} src={logo} />
+          <Toggle />
+        </div>
          { /*these are the props*/}
           <Cards data={data}/>
           <CountryPicker handleCountryChange={this.handleCountryChange}/>

@@ -12,6 +12,14 @@ body{
   width: 180px;
   margin-top: 30px;
 }
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+.dark_mode{
+  background-color: #282828;
+  color: white;
+}
 
 @media(max-width:770px){
   .container{
