@@ -3,7 +3,7 @@ import './Toggle.css';
 function Toggle() {
     const [dark,setMode] = useState(false)
     return (
-        <div className={dark? "dark_mode": "shh"}>
+        // <div className={dark? "dark_mode": "shh"}>
             <div className="nav">
             <label className="switch">
             <input type="checkbox"
@@ -12,7 +12,7 @@ function Toggle() {
             <span className="slider round"></span>
             </label>
             </div>
-        </div>
+        // </div>
     )
 }
 
