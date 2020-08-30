@@ -8,14 +8,10 @@ import {fetchData} from './api';
  class App extends React.Component {
   state={
     data:{ },
-    country: '',
-    dark:false,
+    country: ''
+    
   }
-  bgChange=()=>{
-    this.setState({
-      dark=!(this.state.dark)
-    })
-  }
+  
 
   handleCountryChange = async(country)=>{
     const fetchedData= await fetchData(country);
@@ -35,7 +31,7 @@ import {fetchData} from './api';
      const {data, country} = this.state;
     
      return(
-        <div className={styles.container && styles.dark_mode} >
+        <div className={styles.container} >
         {/* <div className={styles.navbar}>*/}
           <img className={styles.logo} src={logo} />
           {/* <Toggle />*/}
