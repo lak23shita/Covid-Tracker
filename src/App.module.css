@@ -16,10 +16,7 @@ body{
   display: flex;
   flex-direction: row;
 }
-.dark_mode{
-  background-color: #282828;
-  color: white;
-}
+
 
 @media(max-width:770px){
   .container{
